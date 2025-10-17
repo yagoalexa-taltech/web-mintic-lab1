@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+</head>
+<body>
+    <h1>FORMULARIOS EN HTML CON MINTIC</h1>
+   <h2>Vamos a utilizar Inputs</h2>
+   <form action="#">
+    <label for="">Identificación</label>
+    <input type="text">
+    <br>
+    <label for="">Nombre</label>
+    <input type="text">
+    <br>
+    <label for="">Celular</label>
+    <input type="number">
+    <br>
+    <label for="">Correo Electrónico</label>
+    <input type="email">
+    <br>
+    <label for="">Color Favorito</label>
+    <input type="color">
+    <br>
+    <label for="">Fecha de Nacimiento</label>
+    <input type="date">
+    <br>
+    <label for="">La hora actual</label>
+    <input type="time">
+    <br>
+    <label for="">Carga tu foto</label>
+    <input type="file">
+    <br>
+    <label for="">Valor Oculto</label>
+    <input type="hidden" value="7854">
+    <br>
+    <label for="">Deporte que te gusta?</label>
+    <br>
+    <input type="radio" name="deportes" checked><span>Fútbol</span><br>
+    <input type="radio" name="deportes"><span>Natación</span><br>
+    <input type="radio" name="deportes"><span>Voleibol</span><br>
+    <label for="">Hobbies o Pasatiempos</label> <br>
+    <input type="checkbox" id="p1"><label for="p1">Leer</label><br>
+    <input type="checkbox" id="p2"><label for="p2">Comer</label><br>
+    <input type="checkbox" id="p3"checked disabled><label for="p3">Dormir</label><br>
+    <input type="submit" value="Guardar">
+    <br>
+    <label for="">Contraseña</label>
+    <input type="password" required placeholder="Son 4 dígitos" maxlength="4">
+    
+   </form>
+
+   <h2>Aquí se manejan las listas desplegbles o selectores</h2>
+   <form action="https://www.google.com">
+    <fieldset title="Listas desplegables">
+        <legend>Deportes</legend>
+        <select name="" id="">
+            <option value="">Seleccione un deporte</option>
+            <option value="d1">Fútbol</option>
+            <option value="d2" selected>Voleibol</option>
+            <option value="d3" disabled>Beisbol</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Ubicación</legend>
+        <select name="" id="">
+            <optgroup label="Cundinamarca">
+                <option value="">Funza</option>
+                <option value="">Mosquera</option>
+                <option value="">Chía</option>
+            </optgroup>
+            <optgroup label="Cesar">
+                <option value="">Valledupar</option>
+                <option value="">Bosconia</option>
+                <option value="">Aguachica</option>
+            </optgroup>
+        </select>
+        <br>
+        <label for="desc">Descripción</label>
+        <br>
+        <textarea id="desc" rows="20"></textarea>
+    </fieldset>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Cancelar">
+    <input type="button" value="Botón Desactivado" disabled>
+   </form>
+</body>
+</html>
