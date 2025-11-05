@@ -56,7 +56,7 @@ nav ul li a:hover{
     font-size: 10rem;
 }
 .opt{
-    margin-top: 2rem;
+    padding-top: 2rem;
     display: flex;
     gap: 15px;
 }
@@ -66,10 +66,10 @@ nav ul li a:hover{
     border: 2px solid white;
     border-radius: 2px;
     text-align: center;
-    padding: 1rem 2rem;
-    width: fit-content;
+    padding: 1rem 2rem;    
     font-weight: bold;
-    color: white;        
+    color: white;
+    width: fit-content;        
 }
 .active{
     background-color: #0653b6;
@@ -105,16 +105,29 @@ nav ul li a:hover{
 .azul i{
     font-size: 2.5rem;
 }
-
 .base{
     display: flex;
     flex-direction: column;
     justify-content: end;
-    gap: 10px;
-    padding-top: 5rem;
+    gap: 10px;   
     color: white;
     padding-top: 18rem;
-    padding-bottom: 3rem;
+    padding-bottom: 6rem;
+}
+.oscuro{
+    color: #262626;
+}
+.col2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.col2 div{
+    overflow: hidden;
+}
+.col2 div img{
+    text-align: center; 
+    width: 100%;
 }
 
 /*X1*/
@@ -133,9 +146,58 @@ nav ul li a:hover{
 #bank{
     background: url("img/img5.webp"); 
 }
+/*---FOOTER---*/
+footer{
+    background-color: #f6f6f6;
+    padding: 2rem 6rem;
+    margin-top: 3rem;
+}
 /*---AJUSTAR FONDOS---*/
 header, #x1, #tuplan, #hibridos, #bank{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+div.col2 div a{
+    color: black;
+    font-weight: bold;
+}
+
+div.col2 div a:hover{
+    color:blue;
+}
+
+div.izquierdafooter{
+    float: left;
+    margin-top: -15px;
+}
+
+div.derechafooter{
+    float: right;
+}
+
+div.primerfooter{
+    padding: 40px 125px;
+    border-bottom: 2px solid grey;
+}
+
+footer div.primerfooter div.izquierdafooter img{
+    padding-right: 50px;
+}
+
+div.segundofooter{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:2rem;
+    padding: 40px 60px;
+}
+
+div.redessocialesfooter{
+    text-align: right;
+}
+
+div.tercerfooter{
+    padding: 40px 60px;
+    border-top: 2px solid grey;   
 }
