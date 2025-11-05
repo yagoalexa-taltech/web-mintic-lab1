@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: #262626;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header,section{
+    padding: 1rem 6rem;
+}
+section{
+    margin-top: 3rem;
+}
+
+header{
+    background: linear-gradient(to right, #000, #00000000), url("img/img1.webp");
+    height: 100vh;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+nav ul li{
+    padding: 10px auto;
+}
+nav ul li a{
+    padding: 1.2rem 0.5rem;
+    text-decoration: none;
+    color: white;  
+}
+nav ul li a:hover{
+    border-bottom: 2px solid blue;
+}
+/*-----BANNER-----*/
+.banner{
+    padding-top: 4rem;
+}
+.banner h3{
+    font-size: 2rem;
+}
+.titulo{
+    letter-spacing: 0.5rem;
+}
+.banner h1{
+    font-size: 10rem;
+}
+.opt{
+    margin-top: 2rem;
+    display: flex;
+    gap: 15px;
+}
+/*-----BOTONES-----*/
+.btn{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 2px;
+    text-align: center;
+    padding: 1rem 2rem;
+    width: fit-content;
+    font-weight: bold;
+    color: white;        
+}
+.active{
+    background-color: #0653b6;
+    border: 2px solid #0653b6;
+}
+.negro{
+    border: 2px solid #262626;
+    color: #262626;
+}
+/*ENCUENTRA*/
+#enuentra{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 4rem;
+}
+#encuentra h2{
+    text-align: center;
+    font-size: 3rem;
+}
+.rojo{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.azul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.azul i{
+    font-size: 2.5rem;
+}
+
+.base{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px;
+    padding-top: 5rem;
+    color: white;
+    padding-top: 18rem;
+    padding-bottom: 3rem;
+}
+
+/*X1*/
+#x1{
+    background: linear-gradient(to right, #000, #00000000), url("img/img2.webp");    
+}
+/*---TUPLAN---*/
+#tuplan{
+    background: linear-gradient(to right, #000, #00000000), url("img/img3.webp");    
+}
+/*---HIBRIDOS---*/
+#hibridos{
+    background: url("img/img4.webp"); 
+}
+/*---BANK---*/
+#bank{
+    background: url("img/img5.webp"); 
+}
+/*---AJUSTAR FONDOS---*/
+header, #x1, #tuplan, #hibridos, #bank{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
